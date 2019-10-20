@@ -8,7 +8,7 @@
     <link rel="icon" type="image/jpeg" sizes="undefinedxundefined" href="assets/img/ocean.jpg">
     <link rel="icon" type="image/jpeg" sizes="undefinedxundefined" href="assets/img/ocean.jpg">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="manifest" href="manifest.json">
+    <!-- <link rel="manifest" href="manifest.json"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
@@ -109,7 +109,7 @@
                                 <div class="input-group-prepend">
                                     <div class="input-group-text"><i class="fa fa-map-pin"></i></div>
                                 </div>
-                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Location" value="Alicante">
+                                <input readonly type="text" class="form-control" id="inlineFormInputGroup" placeholder="Location" value="Alicante">
                             </div>
                         </div>
                         <div class="col-sm-5">
@@ -135,13 +135,13 @@
                             </div>
                         </div>
                         <div class="col-sm-2">
-                            <button id="search" type="submit" class="btn btn-light mb-2 w-100"><i
-                                    class="fa fa-search"></i></button>
+                            <button id="search" onclick="searchData(event)" type="submit" class="btn btn-light mb-2 w-100"><i class="fa fa-search"></i></button>
                         </div>
                     </div>
                 </form>
-                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50057.87907932921!2d-0.5075436211699357!3d38.35783559216384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6235da3b9dab4b%3A0x1d7da872ac0b81e3!2sAlicante%20(Alacant)%2C%20Alicante!5e0!3m2!1ses!2ses!4v1571482989723!5m2!1ses!2ses"
-                    frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <!-- <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50057.87907932921!2d-0.5075436211699357!3d38.35783559216384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6235da3b9dab4b%3A0x1d7da872ac0b81e3!2sAlicante%20(Alacant)%2C%20Alicante!5e0!3m2!1ses!2ses!4v1571482989723!5m2!1ses!2ses"
+                    frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
+                <div id="map" class="map"></div>
 
                 <a class="btn btn-dark btn-xl downArrow js-scroll-trigger" role="button" href="#portfolio"><i
                         class="fa fa-chevron-down"></i></a>
@@ -211,6 +211,7 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="assets/js/stylish-portfolio.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>ñ

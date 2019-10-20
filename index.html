@@ -87,15 +87,17 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <h2>Sea levels are rising around the world, and approximately 40% of the human population lives in coastal zones.</h2>
-                    <p class="lead">
-                        Global climate change involves the rising of sea level around the world. This is driven by two primary factors: the thermal expansion of water as it heats up, and the melting of ice at the poles increasing the amount of liquid water in the oceans. The
-                        oceans currently rise at a rate of slightly more than three millimeters each year.
-                    </p>
-                    <p class="lead d-none d-md-block">
-                        Approximately 40% of the entire human population lives in coastal areas, and eight of the ten largest cities in the world are located on the coast. As sea level continues to rise, these coastal areas will face increasingly severe impacts from hurricanes,
-                        storm surge, and flooding in general, affecting billions of people.
-                    </p>
+                    <h2 class="py-2">Sea levels are rising around the world, and approximately 40% of the human population lives in coastal zones.</h2>
+                    <div class="py-2">
+                        <p class="lead">
+                            Global climate change involves the rising of sea level around the world. This is driven by two primary factors: the thermal expansion of water as it heats up, and the melting of ice at the poles increasing the amount of liquid water in the oceans. The
+                            oceans currently rise at a rate of slightly more than three millimeters each year.
+                        </p>
+                        <p class="lead d-none d-md-block">
+                            Approximately 40% of the entire human population lives in coastal areas, and eight of the ten largest cities in the world are located on the coast. As sea level continues to rise, these coastal areas will face increasingly severe impacts from hurricanes,
+                            storm surge, and flooding in general, affecting billions of people.
+                        </p>
+                    </div>
                     <a class="btn btn-dark btn-xl downArrow js-scroll-trigger" role="button" href="#services"><i
                             class="fa fa-chevron-down"></i></a>
                 </div>
@@ -104,53 +106,53 @@
     </section>
     <section id="services" class="content-section bg-primary text-white text-center">
         <div class="container">
-            <div class="content-section-heading">
-                <!-- <h3 class="text-secondary mb-0">Services</h3> -->
-                <form>
-                    <div class="form-row align-items-center">
-                        <div class="col-sm-5">
-                            <label class="sr-only" for="inlineFormInputGroup">Location</label>
-                            <div class="input-group mb-2">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text"><i class="fa fa-map-pin"></i></div>
-                                </div>
-                                <input readonly type="text" class="form-control" id="inlineFormInputGroup" placeholder="Location" value="Alicante">
+            <!-- <div class="content-section-heading"> -->
+            <!-- <h3 class="text-secondary mb-0">Services</h3> -->
+            <form>
+                <div class="form-row align-items-center">
+                    <div class="col-sm-5">
+                        <label class="sr-only" for="inlineFormInputGroup">Location</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fa fa-map-pin"></i></div>
                             </div>
-                        </div>
-                        <div class="col-sm-5">
-                            <label class="sr-only" for="inlineFormInputGroup">Date</label>
-                            <div class="input-group mb-2">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                                </div>
-                                <!-- <input type="date" class="form-control" id="inlineFormInputGroup" placeholder="Date"> -->
-                                <select class="form-control" name="years" id="years">
-                                    <option value="2019">2019</option>
-                                    <option value="2119">2119</option>
-                                    <option value="2219">2219</option>
-                                    <option value="2319">2319</option>
-                                    <option value="2419">2419</option>
-                                    <option value="2519">2519</option>
-                                    <option value="2619">2619</option>
-                                    <option value="2719">2719</option>
-                                    <option value="2819">2819</option>
-                                    <option value="2919">2919</option>
-                                    <option value="3019">3019</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-sm-2">
-                            <button id="search" onclick="searchData(event)" type="submit" class="btn btn-light mb-2 w-100"><i class="fa fa-search"></i></button>
+                            <input readonly type="text" class="form-control" id="inlineFormInputGroup" placeholder="Location" value="Alicante">
                         </div>
                     </div>
-                </form>
-                <!-- <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50057.87907932921!2d-0.5075436211699357!3d38.35783559216384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6235da3b9dab4b%3A0x1d7da872ac0b81e3!2sAlicante%20(Alacant)%2C%20Alicante!5e0!3m2!1ses!2ses!4v1571482989723!5m2!1ses!2ses"
+                    <div class="col-sm-5">
+                        <label class="sr-only" for="inlineFormInputGroup">Date</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                            </div>
+                            <!-- <input type="date" class="form-control" id="inlineFormInputGroup" placeholder="Date"> -->
+                            <select class="form-control" name="years" id="years">
+                                <option value="2019">2019</option>
+                                <option value="2119">2119</option>
+                                <option value="2219">2219</option>
+                                <option value="2319">2319</option>
+                                <option value="2419">2419</option>
+                                <option value="2519">2519</option>
+                                <option value="2619">2619</option>
+                                <option value="2719">2719</option>
+                                <option value="2819">2819</option>
+                                <option value="2919">2919</option>
+                                <option value="3019">3019</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <button id="search" onclick="searchData(event)" type="submit" class="btn btn-light mb-2 w-100"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </form>
+            <!-- <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50057.87907932921!2d-0.5075436211699357!3d38.35783559216384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6235da3b9dab4b%3A0x1d7da872ac0b81e3!2sAlicante%20(Alacant)%2C%20Alicante!5e0!3m2!1ses!2ses!4v1571482989723!5m2!1ses!2ses"
                     frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
-                <div id="map" class="map"></div>
+            <div id="map" class="map"></div>
 
-                <a class="btn btn-primary btn-xl downArrow js-scroll-trigger" role="button" href="#portfolio"><i
-                        class="fa fa-chevron-down"></i></a>
-            </div>
+            <a class="btn btn-primary btn-xl downArrow js-scroll-trigger" role="button" href="#portfolio"><i
+                    class="fa fa-chevron-down"></i></a>
+            <!-- </div> -->
         </div>
         <div class="form-group">
             <div class="input-group">

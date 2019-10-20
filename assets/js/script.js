@@ -2,66 +2,48 @@ var yearGlobalValue = 2019;
 var maxIce = 4320000;
 
 var data = [{
-        year: "1993",
-        data: [{
-            ice: 1,
-            sea: 0,
-            temperature: 0,
-            imgUrl: "./assets/img/1993.png"
-        }]
-    },
-    {
         year: "2019",
         data: [{
-            ice: 2,
-            sea: 2019,
+            ice: 127.6,
+            sea: 3.17,
             temperature: 0,
             imgUrl: "./assets/img/0.png"
         }]
     },
     {
-        year: "2319",
+        year: "2069",
         data: [{
-            ice: 3,
-            sea: 2119,
+            ice: 129,
+            sea: 3.38,
             temperature: 0,
             imgUrl: "./assets/img/1.png"
         }]
     },
     {
-        year: "2619",
+        year: "2119",
         data: [{
-            ice: 4,
-            sea: 2219,
+            ice: 133.2,
+            sea: 3.46,
             temperature: 0,
             imgUrl: "./assets/img/2.png"
         }]
     },
     {
-        year: "2919",
+        year: "2169",
         data: [{
-            ice: 5,
-            sea: 2319,
+            ice: 136.4,
+            sea: 3.54,
             temperature: 0,
             imgUrl: "./assets/img/4.png"
         }]
     },
     {
-        year: "3219",
+        year: "2219",
         data: [{
-            ice: 6,
-            sea: 2419,
+            ice: 139,
+            sea: 3.6,
             temperature: 0,
             imgUrl: "./assets/img/8.png"
-        }]
-    },
-    {
-        year: "3519",
-        data: [{
-            ice: 7,
-            sea: 2519,
-            temperature: 0,
-            imgUrl: "./assets/img/16.png"
         }]
     }
 ];
@@ -71,6 +53,12 @@ var data = [{
     changeImg(res.imgUrl);
     let despues = document.getElementById("despues");
     despues.innerHTML = yearGlobalValue;
+
+    let nHielo2019 = document.getElementById("nHielo2019");
+    let nMar2019 = document.getElementById("nMar2019");
+
+    nHielo2019.innerHTML = res.ice + " gt";
+    nMar2019.innerHTML = res.sea + " mts";
 })("2019");
 
 function searchData(e) {
@@ -88,6 +76,12 @@ function searchData(e) {
 
     let despues = document.getElementById("despues");
     despues.innerHTML = yearGlobalValue;
+
+    let nHielo = document.getElementById("nHielo");
+    let nMar = document.getElementById("nMar");
+
+    nHielo.innerHTML = response.ice + " gt";
+    nMar.innerHTML = response.sea + " mts";
 }
 
 function dataArray(obj, year) {

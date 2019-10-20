@@ -16,7 +16,7 @@ var data = [{
             ice: 2,
             sea: 2019,
             temperature: 0,
-            imgUrl: "./assets/img/2019.png"
+            imgUrl: "./assets/img/0.png"
         }]
     },
     {
@@ -25,7 +25,7 @@ var data = [{
             ice: 3,
             sea: 2119,
             temperature: 0,
-            imgUrl: "./assets/img/2319.png"
+            imgUrl: "./assets/img/1.png"
         }]
     },
     {
@@ -34,7 +34,7 @@ var data = [{
             ice: 4,
             sea: 2219,
             temperature: 0,
-            imgUrl: "./assets/img/2619.png"
+            imgUrl: "./assets/img/2.png"
         }]
     },
     {
@@ -43,7 +43,7 @@ var data = [{
             ice: 5,
             sea: 2319,
             temperature: 0,
-            imgUrl: "./assets/img/2919.png"
+            imgUrl: "./assets/img/4.png"
         }]
     },
     {
@@ -52,7 +52,7 @@ var data = [{
             ice: 6,
             sea: 2419,
             temperature: 0,
-            imgUrl: "./assets/img/3219.png"
+            imgUrl: "./assets/img/8.png"
         }]
     },
     {
@@ -61,7 +61,7 @@ var data = [{
             ice: 7,
             sea: 2519,
             temperature: 0,
-            imgUrl: "./assets/img/3519.png"
+            imgUrl: "./assets/img/16.png"
         }]
     }
 ];

@@ -1,11 +1,12 @@
 var yearGlobalValue = 2019;
+var maxIce = 4320000;
 
 var data = [{
         year: "1993",
         data: [{
             ice: 1,
-            sea: 1993,
-            temperature: 19,
+            sea: 0,
+            temperature: 0,
             imgUrl: "./assets/img/1993.png"
         }]
     },
@@ -14,98 +15,53 @@ var data = [{
         data: [{
             ice: 2,
             sea: 2019,
-            temperature: 19,
+            temperature: 0,
             imgUrl: "./assets/img/2019.png"
-        }]
-    },
-    {
-        year: "2119",
-        data: [{
-            ice: 3,
-            sea: 2119,
-            temperature: 19,
-            imgUrl: "./assets/img/2119.png"
-        }]
-    },
-    {
-        year: "2219",
-        data: [{
-            ice: 4,
-            sea: 2219,
-            temperature: 19,
-            imgUrl: "./assets/img/2219.png"
         }]
     },
     {
         year: "2319",
         data: [{
-            ice: 5,
-            sea: 2319,
-            temperature: 19,
+            ice: 3,
+            sea: 2119,
+            temperature: 0,
             imgUrl: "./assets/img/2319.png"
-        }]
-    },
-    {
-        year: "2419",
-        data: [{
-            ice: 6,
-            sea: 2419,
-            temperature: 19,
-            imgUrl: "./assets/img/2419.png"
-        }]
-    },
-    {
-        year: "2519",
-        data: [{
-            ice: 7,
-            sea: 2519,
-            temperature: 19,
-            imgUrl: "./assets/img/2519.png"
         }]
     },
     {
         year: "2619",
         data: [{
-            ice: 8,
-            sea: 2619,
-            temperature: 19,
+            ice: 4,
+            sea: 2219,
+            temperature: 0,
             imgUrl: "./assets/img/2619.png"
-        }]
-    },
-    {
-        year: "2719",
-        data: [{
-            ice: 9,
-            sea: 2719,
-            temperature: 19,
-            imgUrl: "./assets/img/2719.png"
-        }]
-    },
-    {
-        year: "2819",
-        data: [{
-            ice: 10,
-            sea: 2819,
-            temperature: 19,
-            imgUrl: "./assets/img/2819.png"
         }]
     },
     {
         year: "2919",
         data: [{
-            ice: 11,
-            sea: 2919,
-            temperature: 19,
+            ice: 5,
+            sea: 2319,
+            temperature: 0,
             imgUrl: "./assets/img/2919.png"
         }]
     },
     {
-        year: "3019",
+        year: "3219",
         data: [{
-            ice: 12,
-            sea: 3019,
-            temperature: 19,
-            imgUrl: "./assets/img/3019.png"
+            ice: 6,
+            sea: 2419,
+            temperature: 0,
+            imgUrl: "./assets/img/3219.png"
+        }]
+    },
+    {
+        year: "3519",
+        data: [{
+            ice: 7,
+            sea: 2519,
+            temperature: 0,
+            imgUrl: "./assets/img/3519.png"
         }]
     }
 ];
@@ -113,6 +69,8 @@ var data = [{
 (e => {
     let res = dataArray(this.data, e);
     changeImg(res.imgUrl);
+    let despues = document.getElementById("despues");
+    despues.innerHTML = yearGlobalValue;
 })("2019");
 
 function searchData(e) {
@@ -122,6 +80,14 @@ function searchData(e) {
     yearGlobalValue = yearsValue;
     let response = this.dataArray(this.data, this.yearGlobalValue);
     this.changeImg(response.imgUrl);
+
+    let future = document.getElementById("future");
+
+    if (yearGlobalValue != 2019) future.classList.remove("d-none");
+    else future.classList.add("d-none");
+
+    let despues = document.getElementById("despues");
+    despues.innerHTML = yearGlobalValue;
 }
 
 function dataArray(obj, year) {

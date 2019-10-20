@@ -16,11 +16,6 @@
     <script src="https://kit.fontawesome.com/ba72453cf6.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <style>
-        .fas {
-            padding-right: 1rem;
-        }
-    </style>
 </head>
 
 <body id="page-top">
@@ -93,15 +88,16 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <h2 class="py-2">Sea levels are rising around the world, and approximately 40% of the human population lives in coastal zones.</h2>
+                    <h2 class="py-2">Los niveles del mar están aumentando en todo el mundo, y aproximadamente el 40% de la población humana vive en zonas costeras.
+                    </h2>
                     <div class="py-2">
                         <p class="lead">
-                            Global climate change involves the rising of sea level around the world. This is driven by two primary factors: the thermal expansion of water as it heats up, and the melting of ice at the poles increasing the amount of liquid water in the oceans. The
-                            oceans currently rise at a rate of slightly more than three millimeters each year.
+                            El cambio climático global implica el aumento del nivel del mar en todo el mundo. Esto se debe a dos factores principales: la expansión térmica del agua a medida que se calienta, y la fusión del hielo en los polos aumenta la cantidad de agua líquida en
+                            los océanos. Los océanos se elevan actualmente a un ritmo de poco más de tres milímetros cada año.
                         </p>
                         <p class="lead d-none d-md-block">
-                            Approximately 40% of the entire human population lives in coastal areas, and eight of the ten largest cities in the world are located on the coast. As sea level continues to rise, these coastal areas will face increasingly severe impacts from hurricanes,
-                            storm surge, and flooding in general, affecting billions of people.
+                            Aproximadamente el 40% de toda la población humana vive en zonas costeras, y ocho de las diez ciudades más grandes del mundo se encuentran en la costa. A medida que el nivel del mar continúa aumentando, estas áreas costeras se enfrentarán a impactos cada
+                            vez más severos de huracanes, marejadas e inundaciones en general, que afectarán a miles de millones de personas.
                         </p>
                     </div>
                     <a class="btn btn-dark btn-xl downArrow js-scroll-trigger" role="button" href="#services"><i
@@ -134,16 +130,11 @@
                             <!-- <input type="date" class="form-control" id="inlineFormInputGroup" placeholder="Date"> -->
                             <select class="form-control" name="years" id="years">
                                 <option value="2019">2019</option>
-                                <option value="2119">2119</option>
-                                <option value="2219">2219</option>
                                 <option value="2319">2319</option>
-                                <option value="2419">2419</option>
-                                <option value="2519">2519</option>
                                 <option value="2619">2619</option>
-                                <option value="2719">2719</option>
-                                <option value="2819">2819</option>
                                 <option value="2919">2919</option>
-                                <option value="3019">3019</option>
+                                <option value="3219">3219</option>
+                                <option value="3519">3519</option>
                             </select>
                         </div>
                     </div>
@@ -170,13 +161,13 @@
     <section id="portfolio" class="content-section" style="background-color: lightgrey;">
         <div class="container">
             <div class="content-section-heading text-center">
-                <h3 class="text-secondary mb-0">Portfolio</h3>
-                <h2 class="mb-5">Recent Projects</h2>
+                <!-- <h3 class="text-secondary mb-0">Datos</h3> -->
+                <h2 class="mb-5">Datos</h2>
                 <div id="data" class="container-fluid">
                     <div class="row text-center">
                         <div class="card col-sm mr-1 text-dark">
                             <div class="card-body">
-                                <h5 class="card-title" id="titulo1">Datos del año 1993</h5>
+                                <h5 class="card-title" id="antes">1993</h5>
                                 <hr>
                                 <div class="d-flex flex-row my-2 text-center">
                                     <h4><i class="fas fa-snowflake mx-1"></i></h4>
@@ -194,7 +185,7 @@
                         </div>
                         <div class="card col-sm mr-1 text-dark">
                             <div class="card-body">
-                                <h5 class="card-title" id="titulo1">Datos actuales</h5>
+                                <h5 class="card-title" id="ahora">2019</h5>
                                 <hr>
                                 <div class="d-flex flex-row my-2 text-center">
                                     <h4><i class="fas fa-snowflake mx-1"></i></h4>
@@ -210,9 +201,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card col-sm mr-1 text-dark d-none">
+                        <div id="future" class="card col-sm mr-1 text-dark d-none">
+                            <!-- d-none -->
                             <div class="card-body">
-                                <h5 class="card-title" id="titulo1">Datos del año</h5>
+                                <h5 class="card-title" id="despues"></h5>
                                 <hr>
                                 <div class="d-flex flex-row my-2 text-center">
                                     <h4><i class="fas fa-snowflake mx-1"></i></h4>

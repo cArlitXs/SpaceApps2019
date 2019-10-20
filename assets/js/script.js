@@ -134,5 +134,5 @@ function dataArray(obj, year) {
 
 function changeImg(url) {
     let map = document.getElementById("map");
-    map.style.backgroundImage = "url('" + url + "')";
+    map.style.backgroundImage = "url('".concat(url).concat("')");
 }
